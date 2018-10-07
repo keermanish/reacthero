@@ -1,0 +1,52 @@
+.batman-logo {
+  background-image: url('../../Assets/Images/Logo/batman.jpg');
+}
+
+.superman-logo {
+  background-color: #0060aa;
+  background-image: url('../../Assets/Images/Logo/superman.png');
+}
+
+.flash-logo {
+  background-image: url('../../Assets/Images/Logo/flash.jpg');
+}
+
+.hulk-logo {
+  background-image: url('../../Assets/Images/Logo/hulk.jpg');
+}
+
+.hero-logo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.active:after {
+  content: '';
+  width: 210px;
+  height: 210px;
+  display: inline-block;
+  border: 8px solid white;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  animation: rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
